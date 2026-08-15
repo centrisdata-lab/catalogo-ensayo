@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luma — Velas Artesanales Aromáticas</title>
+<meta name="description" content="Velas artesanales aromáticas hechas a mano en pequeños lotes. Cera vegetal, esencias naturales, aromas para cada momento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container">
+    <a href="#" class="logo"><span class="logo-icon">🕯️</span> Luma</a>
+    <nav class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#materiales">Ingredientes</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#footer">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Carrito">🛒<span class="cart-count" id="cartCount">0</span></button>
+      <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <span class="eyebrow">🕯️ Hechas a mano, en pequeños lotes</span>
+    <h1>Velas que transforman <span>tu espacio</span> en un ritual</h1>
+    <p>Aromas naturales en cera vegetal, hechos a mano uno por uno. Cada vela de Luma está pensada para acompañar un momento distinto de tu día.</p>
+    <div class="hero-ctas">
+      <a href="#catalogo" class="btn btn-primary">Ver colección</a>
+      <a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20Luma" target="_blank" class="btn btn-whatsapp">💬 Escríbenos</a>
+    </div>
+  </div>
+</section>
+
+<nav class="quick-nav">
+  <div class="quick-nav-scroll">
+    <a href="#catalogo">Catálogo</a>
+    <a href="#materiales">Ingredientes</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#footer">Contacto</a>
+  </div>
+</nav>
+
+<section class="catalog" id="catalogo">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Nuestra colección</span>
+      <h2>4 aromas, un momento para cada uno</h2>
+      <p>Elige la vela que acompañe tu ritual — de la mañana tranquila a la noche relajada.</p>
+    </div>
+
+    <div class="catalog-controls">
+      <div class="search-bar">
+        <span class="icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Buscar producto...">
+      </div>
+      <div class="filter-chips" id="filterChips">
+        <button class="chip active" data-filter="todos">Todos</button>
+        <button class="chip" data-filter="relajante">Relajantes</button>
+        <button class="chip" data-filter="energizante">Energizantes</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+      <article class="product-card" data-category="relajante" data-name="Vela Lavanda y Vainilla" data-price="45000">
+        <span class="product-badge">Best seller</span>
+        <div class="product-image" data-placeholder="Vela Lavanda y Vainilla">
+          <div class="product-placeholder"><span class="icon">🕯️</span><span>Lavanda y Vainilla</span><small>assets/img/vela-lavanda-vainilla.jpg</small></div>
+        </div>
+        <div class="product-body">
+          <h3>Vela Lavanda y Vainilla</h3>
+          <p>Cera de soja, mecha de madera, aroma relajante ideal para la noche.</p>
+          <div class="product-footer">
+            <span class="product-price">$45.000</span>
+            <div class="product-actions">
+              <button class="product-add" aria-label="Agregar al carrito">+</button>
+              <a class="btn-buy" target="_blank" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20comprar%3A%20Vela%20Lavanda%20y%20Vainilla%20-%20%2445.000">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="energizante" data-name="Vela Cítrico y Jengibre" data-price="45000">
+        <span class="product-badge">Nuevo</span>
+        <div class="product-image" data-placeholder="Vela Cítrico y Jengibre">
+          <div class="product-placeholder"><span class="icon">🕯️</span><span>Cítrico y Jengibre</span><small>assets/img/vela-citrico-jengibre.jpg</small></div>
+        </div>
+        <div class="product-body">
+          <h3>Vela Cítrico y Jengibre</h3>
+          <p>Notas frescas y energizantes, perfecta para empezar el día con claridad.</p>
+          <div class="product-footer">
+            <span class="product-price">$45.000</span>
+            <div class="product-actions">
+              <button class="product-add" aria-label="Agregar al carrito">+</button>
+              <a class="btn-buy" target="_blank" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20comprar%3A%20Vela%20C%C3%ADtrico%20y%20Jengibre%20-%20%2445.000">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="relajante" data-name="Vela Sándalo y Ámbar" data-price="52000">
+        <span class="product-badge">Edición limitada</span>
+        <div class="product-image" data-placeholder="Vela Sándalo y Ámbar">
+          <div class="product-placeholder"><span class="icon">🕯️</span><span>Sándalo y Ámbar</span><small>assets/img/vela-sandalo-ambar.jpg</small></div>
+        </div>
+        <div class="product-body">
+          <h3>Vela Sándalo y Ámbar</h3>
+          <p>Aroma cálido y envolvente en frasco de vidrio reutilizable, tiempo de combustión 40h.</p>
+          <div class="product-footer">
+            <span class="product-price">$52.000</span>
+            <div class="product-actions">
+              <button class="product-add" aria-label="Agregar al carrito">+</button>
+              <a class="btn-buy" target="_blank" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20comprar%3A%20Vela%20S%C3%A1ndalo%20y%20%C3%81mbar%20-%20%2452.000">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="energizante" data-name="Vela Menta y Eucalipto" data-price="48000">
+        <span class="product-badge">Premium</span>
+        <div class="product-image" data-placeholder="Vela Menta y Eucalipto">
+          <div class="product-placeholder"><span class="icon">🕯️</span><span>Menta y Eucalipto</span><small>assets/img/vela-menta-eucalipto.jpg</small></div>
+        </div>
+        <div class="product-body">
+          <h3>Vela Menta y Eucalipto</h3>
+          <p>Frescor intenso para despejar la mente, ideal para espacios de trabajo.</p>
+          <div class="product-footer">
+            <span class="product-price">$48.000</span>
+            <div class="product-actions">
+              <button class="product-add" aria-label="Agregar al carrito">+</button>
+              <a class="btn-buy" target="_blank" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20comprar%3A%20Vela%20Menta%20y%20Eucalipto%20-%20%2448.000">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="info-section" id="materiales">
+  <div class="container info-grid">
+    <div class="info-text">
+      <span class="eyebrow">Cómo hacemos cada vela</span>
+      <h2>Ingredientes simples, proceso artesanal</h2>
+      <p>Sin parafina, sin atajos — cada vela se vierte a mano y se deja curar antes de salir de nuestro taller.</p>
+      <ul class="icon-list">
+        <li><span class="icon-badge">🌿</span><div><strong>Cera de soja vegetal</strong><span>Combustión limpia, libre de derivados del petróleo.</span></div></li>
+        <li><span class="icon-badge">🪵</span><div><strong>Mecha de madera</strong><span>Crepitar suave, sin plomo, sin humo excesivo.</span></div></li>
+        <li><span class="icon-badge">💧</span><div><strong>Esencias naturales</strong><span>Fragancias derivadas de plantas, no sintéticas.</span></div></li>
+        <li><span class="icon-badge">♻️</span><div><strong>Frasco reutilizable</strong><span>Vidrio grueso pensado para tener una segunda vida.</span></div></li>
+      </ul>
+      <a href="#catalogo" class="btn btn-primary">Explorar colección</a>
+    </div>
+    <div class="info-gallery">
+      <div class="product-placeholder"><span class="icon">🕯️</span><span>Taller Luma</span><small>assets/img/taller.jpg</small></div>
+      <div class="product-placeholder"><span class="icon">🌿</span><span>Cera de soja</span><small>assets/img/cera.jpg</small></div>
+      <div class="product-placeholder"><span class="icon">🪵</span><span>Mecha de madera</span><small>assets/img/mecha.jpg</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="nosotros">
+  <span class="eyebrow">Nuestro compromiso</span>
+  <h2>Un ritual pequeño, un impacto real</h2>
+  <p>Luma nace del deseo de traer calma a espacios cotidianos, sin sacrificar ingredientes limpios ni procesos responsables. Cada lote es pequeño, revisado a mano, hecho para durar.</p>
+  <div class="badge-row">
+    <span class="trust-badge">🌱 Cera vegetal</span>
+    <span class="trust-badge">🐰 Cruelty-free</span>
+    <span class="trust-badge">📦 Empaque reciclable</span>
+    <span class="trust-badge">🤝 Producción local</span>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">🕯️ Luma</div>
+      <p>Velas artesanales aromáticas hechas a mano en pequeños lotes. Cera vegetal, esencias naturales.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="https://wa.me/573000000000" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Explorar</h4>
+      <ul>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#materiales">Ingredientes</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/573000000000">WhatsApp</a></li>
+        <li><a href="mailto:hola@luma.com">hola@luma.com</a></li>
+        <li><a href="#">Bogotá, Colombia</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 Luma. Velas con intención.</div></div>
+</footer>
+
+<a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank" class="float-cta" aria-label="Escribir por WhatsApp">💬</a>
+<button class="float-cta-cart" id="floatCartBtn" aria-label="Ver carrito">🛒</button>
+
+<div class="modal-backdrop" id="cartModal">
+  <div class="modal-box">
+    <button class="modal-close" id="cartClose">✕</button>
+    <div class="modal-body">
+      <h3 style="margin-bottom:18px;">Tu carrito</h3>
+      <div id="cartItems"></div>
+      <div id="cartEmpty" style="color:var(--text-muted); padding:12px 0;">Aún no has agregado productos.</div>
+      <div id="cartTotalRow" class="cart-total-row" style="display:none;"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <a id="cartCheckout" class="btn btn-whatsapp" style="width:100%; justify-content:center; margin-top:18px; display:none;" target="_blank" href="#">💬 Finalizar pedido por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
