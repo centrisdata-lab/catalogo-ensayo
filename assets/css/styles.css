@@ -1,12 +1,12 @@
 /* Luma — Catálogo Digital */
 
 :root {
-  --primary: #c9622a;
-  --primary-dark: #a84f20;
-  --primary-light: #f6e4d8;
-  --secondary: #6b4a7a;
-  --accent: #e0a458;
-  --bg: #faf5ef;
+  --primary: #4a2f1f;
+  --primary-dark: #33200f;
+  --primary-light: #f0e2d0;
+  --secondary: #d4762a;
+  --accent: #d4762a;
+  --bg: #f7f0e6;
   --bg-alt: #f1e6d8;
   --surface: #ffffff;
   --text: #2e2620;
